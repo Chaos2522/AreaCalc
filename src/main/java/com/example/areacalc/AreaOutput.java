@@ -13,6 +13,9 @@ public class AreaOutput {
        if (form.equals("square")){
            return a*a;
        }
+       if (form.equals("circle")){
+           return Math.PI *(a*a);
+       }
         return a;
     }
 }
