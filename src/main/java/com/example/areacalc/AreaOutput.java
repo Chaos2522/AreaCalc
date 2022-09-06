@@ -13,6 +13,15 @@ public class AreaOutput {
        if (form.equals("square")){
            return a*a;
        }
+       if (form.equals("circle")){
+           return Math.PI *(a*a);
+       }
         return a;
+    }
+    public double area(@RequestParam String form, @RequestParam double a,@RequestParam double b){
+        if (form.equals("rectangle")){
+            return a*b;
+        }
+        return -1;
     }
 }
