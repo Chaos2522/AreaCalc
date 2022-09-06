@@ -11,7 +11,7 @@ public class AreaOutput {
 
 
     @RequestMapping(value = "/calculate", params = {"form", "a", "b"})
-    public double area(@RequestParam String form, @RequestParam double a,@RequestParam double b){
+    public static double area(@RequestParam String form, @RequestParam double a,@RequestParam double b){
         if (form.equals("rectangle")){
             return a*b;
         }
@@ -19,7 +19,7 @@ public class AreaOutput {
     }
 
     @RequestMapping(value = "/calculate", params = {"form","a"})
-    public double area(@RequestParam String form,@RequestParam double a){
+    public static double area(@RequestParam String form, @RequestParam double a){
        if (form.equals("square")){
            return a*a;
        }
