@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AreaCalc {
 
     @RequestMapping("/area")
-    public String index() {
+    public static String index() {
             return "choose form: circle/rectangle/square and enter radius/a+b/a";
         }
     }
