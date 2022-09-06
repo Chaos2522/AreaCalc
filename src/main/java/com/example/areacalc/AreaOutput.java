@@ -18,4 +18,10 @@ public class AreaOutput {
        }
         return a;
     }
+    public double area(@RequestParam String form, @RequestParam double a,@RequestParam double b){
+        if (form.equals("rectangle")){
+            return a*b;
+        }
+        return -1;
+    }
 }
